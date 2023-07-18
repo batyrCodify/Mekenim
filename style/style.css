@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --i:(1vw+1vh);
+}
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1500px;
+    width: 100%;
+}
+.logo{
+    width: 80px;
+    height: auto;
+}
+.for-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+    list-style-type:none ;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+/* 1 section */
+.video-bcg{
+    width: 100%;
+    height: auto;
+    display: none;
+ 
+}
+.video{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.video-page{
+    background: url(../assets/peyzazh.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.title-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.title{
+    color: white;
+}
+.video-button{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+    background: none;
+    color: white;
+}
+.video-button:hover{
+    background: black;
+    transition: 0.5s;
+}
+/* 2 section */
+.for-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-card{
+    max-width: 640px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+.card-subtitle{
+    font-family: 'Roboto Mono', monospace;
+    color: grey;
+font-size: calc(var(--i)*10);
+}
+.card-img{
+    max-width: 640px;
+    width: 100%;
+    height: auto;
+}
+/* 3 section */
+.slider-page{
+    margin-top: 2%;
+    /* background: black; */
+}
+.slider-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  max-width: 100%; 
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slider .slide {
+  flex-shrink: 0;
+  width: 100%; 
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-slide{
+    max-width: 1120px;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+.slide-btn{
+    max-width: 50px;
+    width: 100%;
+    height: 40px;
+    background: red;
+    border: none;
+    color: yellow;
+}
+.slide-btn:active{
+    background: black;
+    transition: 0.2ms;
+}
+/* footer */
+.footer{
+    background:#000;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-menu{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-apps{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.footer-title{
+    color: white;
+}
+.footer-second__title{
+    color: white;
+}
+.footer-link{
+    color: white;
+}
+.app{
+    width: 50px;
+    height: 50px;
+}   
+/* adaptiv */
+@media (max-width:700px) {
+    .header-menu{
+        display: none;
+    }
+    .card{
+        display: flex;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-title{
+        display: none;
+    }
+    .footer-apps{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+    }
+    .app{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width:500px) {
+    .footer-second__title{
+        display: none;
+    }
+}
